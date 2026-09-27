@@ -1,0 +1,229 @@
+
+RUN analyze_core.py
+    statistic  estimate     lower     upper
+Mean 3D error  2.001719  1.774094  2.229343
+       Mean x -1.276005 -1.521601 -1.030410
+       Mean y -0.251721 -0.462095 -0.041348
+       Mean z -0.484158 -0.657347 -0.310968
+      Pearson  0.714822  0.603079  0.799051
+     Spearman  0.704950  0.590263  0.791740
+Core analysis and figures completed.
+[
+  {
+    "file": "LT_horizontal_timeseries.csv",
+    "rows": 57313,
+    "columns": [
+      "x_LT_horizontal",
+      "y_LT_horizontal",
+      "z_LT_horizontal"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "md5": "6475e0d7ee0641953892ef43fa55fd16",
+    "first_third_coordinate_equal": true,
+    "coordinate_ranges": [
+      1.120270062,
+      0.23586841400000003,
+      1.120270062
+    ],
+    "timestamp_column_present": false,
+    "mean_step_native_units": 5.735435176178261e-05
+  },
+  {
+    "file": "LT_vertical_timeseries.csv",
+    "rows": 100737,
+    "columns": [
+      "x_LT_vertical",
+      "y_LT_vertical",
+      "z_LT_vertical"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 4,
+    "constant_columns": [],
+    "md5": "77e9b7ab7843c24934d8dfd28f827232",
+    "first_third_coordinate_equal": true,
+    "coordinate_ranges": [
+      0.04413988299999971,
+      0.318595211,
+      0.04413988299999971
+    ],
+    "timestamp_column_present": false,
+    "mean_step_native_units": 1.0518573053085765e-05
+  }
+]
+
+RUN r1c2/analyze_r1c2.py
+{
+  "dataset_doi": "10.18419/DARUS-4559",
+  "version": "1.0",
+  "provenance": [
+    {
+      "name": "regression_results.csv",
+      "md5": "9c58c023299bb51d119c2abaf8b5f851",
+      "sha256": "3c842cc43585dfacca983d269a116f4ad3aa90fe759ca9d12466141931c950ee"
+    },
+    {
+      "name": "validation_results.csv",
+      "md5": "e3b86e528c8497922cd332c6c05fb316",
+      "sha256": "63442c1902f76f4056ea054c9f6b725b590ed6d0efa04c2cce538c1a782ba233"
+    }
+  ],
+  "calibration": {
+    "n": 45,
+    "mean_mm": 0.13413041379082316,
+    "rmse_mm": 0.19156657995394188,
+    "median_mm": 0.08641095029961796
+  },
+  "validation": {
+    "n": 100,
+    "mean_mm": 2.0017185643183755,
+    "rmse_mm": 2.3042855434449376,
+    "median_mm": 1.882087940348538
+  },
+  "calibration_min_m": [
+    2.23395320224667,
+    -0.79371701862,
+    -0.0490765674666667
+  ],
+  "calibration_max_m": [
+    3.35413581067667,
+    -0.46793427081,
+    1.47658669958333
+  ],
+  "calibration_ranges_m": [
+    1.12018260843,
+    0.32578274781,
+    1.5256632670499968
+  ],
+  "validation_ranges_m": [
+    2.14444553012334,
+    3.45183055247667,
+    2.477887494416667
+  ],
+  "bounding_box_ratio": 32.94355584457057,
+  "tertile_method": "linear (Hyndman-Fan type 7), q=1/3 and 2/3",
+  "tertile_thresholds_m": [
+    0.5089117948815874,
+    0.8598137234464054
+  ],
+  "strata": [
+    {
+      "group": "Inside calibration bounding box",
+      "n": 11,
+      "mean_mm": 1.558598502553972,
+      "rmse_mm": 1.812600682964567,
+      "median_mm": 1.1633736919596245,
+      "min_d_cal_m": 0.056464992793164664,
+      "max_d_cal_m": 0.5071605247239236
+    },
+    {
+      "group": "Outside calibration bounding box",
+      "n": 89,
+      "mean_mm": 2.0564862124016168,
+      "rmse_mm": 2.3579472432610524,
+      "median_mm": 1.9502182035035858,
+      "min_d_cal_m": 0.12557170947009846,
+      "max_d_cal_m": 2.2509013063781627
+    },
+    {
+      "group": "Nearest-distance lower tertile",
+      "n": 34,
+      "mean_mm": 1.6020045552474313,
+      "rmse_mm": 1.8779841634472052,
+      "median_mm": 1.5401991832108588,
+      "min_d_cal_m": 0.056464992793164664,
+      "max_d_cal_m": 0.5089117948815874
+    },
+    {
+      "group": "Nearest-distance middle tertile",
+      "n": 33,
+      "mean_mm": 1.94227908780337,
+      "rmse_mm": 2.2661060733624505,
+      "median_mm": 1.754840782718323,
+      "min_d_cal_m": 0.5165270645304267,
+      "max_d_cal_m": 0.8598137234464054
+    },
+    {
+      "group": "Nearest-distance upper tertile",
+      "n": 33,
+      "mean_mm": 2.4729845956337475,
+      "rmse_mm": 2.7057645571409656,
+      "median_mm": 2.346168765403857,
+      "min_d_cal_m": 0.8809285397794406,
+      "max_d_cal_m": 2.2509013063781627
+    }
+  ],
+  "correlations": [
+    {
+      "comparison": "tracker_distance_vs_error",
+      "pearson_r": 0.7148224074192524,
+      "spearman_rho": 0.7049504950495049
+    },
+    {
+      "comparison": "nearest_calibration_distance_vs_error",
+      "pearson_r": 0.4068633999448547,
+      "spearman_rho": 0.3037863786378638
+    },
+    {
+      "comparison": "tracker_distance_vs_nearest_calibration_distance",
+      "pearson_r": 0.1366848563108336,
+      "spearman_rho": 0.051941194119411935
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}
+
+RUN r1c3/analyze_r1c3.py
+  joint  spearman  partial_spearman_xyz
+Theta_1  0.693489              0.262644
+Theta_2 -0.316064             -0.600619
+Theta_3 -0.660294             -0.643956
+Theta_4  0.313135              0.072472
+Theta_5 -0.703606             -0.641655
+Theta_6 -0.787783             -0.634687
+model  predictors  in_sample_r2  random_cv_r2_mean  random_cv_r2_sd  random_cv_rmse_mean_mm  random_cv_rmse_sd_mm  spatial_cv_r2  spatial_cv_rmse_mm  condition_number_standardized
+    J           6      0.890175           0.863622         0.006558                0.421407              0.010097       0.737735            0.584546                       3.612863
+    S           3      0.409758           0.338071         0.023982                0.928509              0.016800      -0.450931            1.374901                       1.962084
+  S+J           9      0.902279           0.866511         0.006892                0.416901              0.010802       0.650781            0.674523                      14.558372
+   S2           9      0.673532           0.561089         0.025562                0.755894              0.022020       0.294872            0.958478                      37.844616
+ S2+J          15      0.928007           0.879280         0.013069                0.396081              0.020538       0.511453            0.797813                      56.937667
+VIF S+J
+ model predictor       VIF
+  S+J      LT_x 15.835391
+  S+J      LT_y 12.247549
+  S+J      LT_z  9.589145
+  S+J   Theta_1 16.310974
+  S+J   Theta_2 22.139025
+  S+J   Theta_3 20.901004
+  S+J   Theta_4  2.386343
+  S+J   Theta_5  1.388687
+  S+J   Theta_6  4.885653
+Spatial group sizes [19 29  9 22 21]
+
+RUN r1c3/verify_and_plot.py
+PASS: independent OLS, partial correlation, VIF, fold coverage and pooled spatial RMSE checks.
+
+RUN r1c4/check_coverage.py
+{
+  "n": 100,
+  "u_res_mm": 1.8487696906836562,
+  "U_res_k2_mm": 3.6975393813673123,
+  "covered_original_errors": 90,
+  "empirical_coverage": 0.9,
+  "centred_rms_mm": 1.8395026163337294,
+  "norm_SD_mm": 1.1471768839297365,
+  "E95_mm": 3.9864910696341105,
+  "smallest_exceedance_mm": 3.721681960613138,
+  "largest_covered_mm": 3.503790499797951,
+  "coverage_definition": "mean(norm(e_i)<=2*sqrt(trace(sample_cov(e)))); original uncentred residual vectors, full precision",
+  "file_md5": "e3b86e528c8497922cd332c6c05fb316"
+}
+
+All analyses and verification checks completed.

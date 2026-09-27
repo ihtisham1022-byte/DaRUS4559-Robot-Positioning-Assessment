@@ -1,0 +1,4 @@
+comparison,pearson_r,spearman_rho
+tracker_distance_vs_error,0.7148224074192524,0.7049504950495049
+nearest_calibration_distance_vs_error,0.4068633999448547,0.3037863786378638
+tracker_distance_vs_nearest_calibration_distance,0.1366848563108336,0.051941194119411935

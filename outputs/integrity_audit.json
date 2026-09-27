@@ -1,0 +1,138 @@
+[
+  {
+    "file": "LT_horizontal_timeseries.csv",
+    "rows": 57313,
+    "columns": [
+      "x_LT_horizontal",
+      "y_LT_horizontal",
+      "z_LT_horizontal"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "md5": "6475e0d7ee0641953892ef43fa55fd16",
+    "first_third_coordinate_equal": true,
+    "coordinate_ranges": [
+      1.120270062,
+      0.23586841400000003,
+      1.120270062
+    ],
+    "timestamp_column_present": false,
+    "mean_step_native_units": 5.735435176178261e-05
+  },
+  {
+    "file": "LT_vertical_timeseries.csv",
+    "rows": 100737,
+    "columns": [
+      "x_LT_vertical",
+      "y_LT_vertical",
+      "z_LT_vertical"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 4,
+    "constant_columns": [],
+    "md5": "77e9b7ab7843c24934d8dfd28f827232",
+    "first_third_coordinate_equal": true,
+    "coordinate_ranges": [
+      0.04413988299999971,
+      0.318595211,
+      0.04413988299999971
+    ],
+    "timestamp_column_present": false,
+    "mean_step_native_units": 1.0518573053085765e-05
+  },
+  {
+    "file": "nom_param_DHH.csv",
+    "rows": 21,
+    "columns": [
+      "param",
+      "val",
+      "unit"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "md5": "6ef96f024c18f7d6ef4c00cfcf2e619d"
+  },
+  {
+    "file": "optimization_args.csv",
+    "rows": 1,
+    "columns": [
+      "p_x",
+      "p_y",
+      "p_z",
+      "t_LT_0_x",
+      "t_LT_0_y",
+      "t_LT_0_z",
+      "Delta_p_x",
+      "Delta_p_y",
+      "Delta_p_z",
+      "Delta_t_LT_0_x",
+      "Delta_t_LT_0_y",
+      "Delta_t_LT_0_z"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [
+      "p_x",
+      "p_y",
+      "p_z",
+      "t_LT_0_x",
+      "t_LT_0_y",
+      "t_LT_0_z",
+      "Delta_p_x",
+      "Delta_p_y",
+      "Delta_p_z",
+      "Delta_t_LT_0_x",
+      "Delta_t_LT_0_y",
+      "Delta_t_LT_0_z"
+    ],
+    "md5": "4340ad18642889f6a05ce01c862e0f6a"
+  },
+  {
+    "file": "regression_results.csv",
+    "rows": 45,
+    "columns": [
+      "Theta_1",
+      "Theta_2",
+      "Theta_3",
+      "Theta_3_1",
+      "Theta_4",
+      "Theta_5",
+      "Theta_6",
+      "LT_x",
+      "LT_y",
+      "LT_z",
+      "E_x",
+      "E_y",
+      "E_z"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "md5": "9c58c023299bb51d119c2abaf8b5f851"
+  },
+  {
+    "file": "validation_results.csv",
+    "rows": 100,
+    "columns": [
+      "Theta_1",
+      "Theta_2",
+      "Theta_3",
+      "Theta_3_1",
+      "Theta_4",
+      "Theta_5",
+      "Theta_6",
+      "LT_x",
+      "LT_y",
+      "LT_z",
+      "E_x",
+      "E_y",
+      "E_z"
+    ],
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "md5": "e3b86e528c8497922cd332c6c05fb316"
+  }
+]

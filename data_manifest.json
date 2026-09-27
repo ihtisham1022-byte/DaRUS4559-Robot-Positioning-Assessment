@@ -1,0 +1,37 @@
+{
+  "doi": "10.18419/DARUS-4559",
+  "version": "1.0",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "id": 353096,
+      "name": "LT_horizontal_timeseries.csv",
+      "md5": "6475e0d7ee0641953892ef43fa55fd16"
+    },
+    {
+      "id": 353097,
+      "name": "LT_vertical_timeseries.csv",
+      "md5": "77e9b7ab7843c24934d8dfd28f827232"
+    },
+    {
+      "id": 353102,
+      "name": "nom_param_DHH.csv",
+      "md5": "6ef96f024c18f7d6ef4c00cfcf2e619d"
+    },
+    {
+      "id": 353101,
+      "name": "optimization_args.csv",
+      "md5": "4340ad18642889f6a05ce01c862e0f6a"
+    },
+    {
+      "id": 353099,
+      "name": "regression_results.csv",
+      "md5": "9c58c023299bb51d119c2abaf8b5f851"
+    },
+    {
+      "id": 353100,
+      "name": "validation_results.csv",
+      "md5": "e3b86e528c8497922cd332c6c05fb316"
+    }
+  ]
+}

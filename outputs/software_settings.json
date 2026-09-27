@@ -1,0 +1,16 @@
+{
+  "Python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "scikit-learn": "1.8.0",
+  "seed": 4559,
+  "sample_covariance_ddof": 1,
+  "quantile_method": "linear",
+  "cross_validation": "RepeatedKFold 5 folds, 20 repetitions",
+  "regions": "KMeans, Euclidean unscaled metre coordinates, k=5, n_init=50",
+  "OLS": "intercept; train-fold StandardScaler; no tuning",
+  "partial_spearman": "average ranks, residualize on ranked x,y,z plus intercept",
+  "thread_limit": 1
+}

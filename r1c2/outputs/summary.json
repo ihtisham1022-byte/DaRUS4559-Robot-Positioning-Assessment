@@ -1,0 +1,125 @@
+{
+  "dataset_doi": "10.18419/DARUS-4559",
+  "version": "1.0",
+  "provenance": [
+    {
+      "name": "regression_results.csv",
+      "md5": "9c58c023299bb51d119c2abaf8b5f851",
+      "sha256": "3c842cc43585dfacca983d269a116f4ad3aa90fe759ca9d12466141931c950ee"
+    },
+    {
+      "name": "validation_results.csv",
+      "md5": "e3b86e528c8497922cd332c6c05fb316",
+      "sha256": "63442c1902f76f4056ea054c9f6b725b590ed6d0efa04c2cce538c1a782ba233"
+    }
+  ],
+  "calibration": {
+    "n": 45,
+    "mean_mm": 0.13413041379082316,
+    "rmse_mm": 0.19156657995394188,
+    "median_mm": 0.08641095029961796
+  },
+  "validation": {
+    "n": 100,
+    "mean_mm": 2.0017185643183755,
+    "rmse_mm": 2.3042855434449376,
+    "median_mm": 1.882087940348538
+  },
+  "calibration_min_m": [
+    2.23395320224667,
+    -0.79371701862,
+    -0.0490765674666667
+  ],
+  "calibration_max_m": [
+    3.35413581067667,
+    -0.46793427081,
+    1.47658669958333
+  ],
+  "calibration_ranges_m": [
+    1.12018260843,
+    0.32578274781,
+    1.5256632670499968
+  ],
+  "validation_ranges_m": [
+    2.14444553012334,
+    3.45183055247667,
+    2.477887494416667
+  ],
+  "bounding_box_ratio": 32.94355584457057,
+  "tertile_method": "linear (Hyndman-Fan type 7), q=1/3 and 2/3",
+  "tertile_thresholds_m": [
+    0.5089117948815874,
+    0.8598137234464054
+  ],
+  "strata": [
+    {
+      "group": "Inside calibration bounding box",
+      "n": 11,
+      "mean_mm": 1.558598502553972,
+      "rmse_mm": 1.812600682964567,
+      "median_mm": 1.1633736919596245,
+      "min_d_cal_m": 0.056464992793164664,
+      "max_d_cal_m": 0.5071605247239236
+    },
+    {
+      "group": "Outside calibration bounding box",
+      "n": 89,
+      "mean_mm": 2.0564862124016168,
+      "rmse_mm": 2.3579472432610524,
+      "median_mm": 1.9502182035035858,
+      "min_d_cal_m": 0.12557170947009846,
+      "max_d_cal_m": 2.2509013063781627
+    },
+    {
+      "group": "Nearest-distance lower tertile",
+      "n": 34,
+      "mean_mm": 1.6020045552474313,
+      "rmse_mm": 1.8779841634472052,
+      "median_mm": 1.5401991832108588,
+      "min_d_cal_m": 0.056464992793164664,
+      "max_d_cal_m": 0.5089117948815874
+    },
+    {
+      "group": "Nearest-distance middle tertile",
+      "n": 33,
+      "mean_mm": 1.94227908780337,
+      "rmse_mm": 2.2661060733624505,
+      "median_mm": 1.754840782718323,
+      "min_d_cal_m": 0.5165270645304267,
+      "max_d_cal_m": 0.8598137234464054
+    },
+    {
+      "group": "Nearest-distance upper tertile",
+      "n": 33,
+      "mean_mm": 2.4729845956337475,
+      "rmse_mm": 2.7057645571409656,
+      "median_mm": 2.346168765403857,
+      "min_d_cal_m": 0.8809285397794406,
+      "max_d_cal_m": 2.2509013063781627
+    }
+  ],
+  "correlations": [
+    {
+      "comparison": "tracker_distance_vs_error",
+      "pearson_r": 0.7148224074192524,
+      "spearman_rho": 0.7049504950495049
+    },
+    {
+      "comparison": "nearest_calibration_distance_vs_error",
+      "pearson_r": 0.4068633999448547,
+      "spearman_rho": 0.3037863786378638
+    },
+    {
+      "comparison": "tracker_distance_vs_nearest_calibration_distance",
+      "pearson_r": 0.1366848563108336,
+      "spearman_rho": 0.051941194119411935
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

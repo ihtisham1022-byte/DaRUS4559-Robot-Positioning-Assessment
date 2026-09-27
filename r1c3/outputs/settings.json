@@ -1,0 +1,71 @@
+{
+  "Python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "scikit-learn": "1.8.0",
+  "seed": 4559,
+  "file_sha256": "63442c1902f76f4056ea054c9f6b725b590ed6d0efa04c2cce538c1a782ba233",
+  "spatial_group_sizes": [
+    19,
+    29,
+    9,
+    22,
+    21
+  ],
+  "partial_spearman_control": "linear regression on average ranks of LT_x LT_y LT_z; intercept included",
+  "models": {
+    "J": [
+      "Theta_1",
+      "Theta_2",
+      "Theta_3",
+      "Theta_4",
+      "Theta_5",
+      "Theta_6"
+    ],
+    "S": [
+      "LT_x",
+      "LT_y",
+      "LT_z"
+    ],
+    "S+J": [
+      "LT_x",
+      "LT_y",
+      "LT_z",
+      "Theta_1",
+      "Theta_2",
+      "Theta_3",
+      "Theta_4",
+      "Theta_5",
+      "Theta_6"
+    ],
+    "S2": [
+      "LT_x",
+      "LT_y",
+      "LT_z",
+      "LT_x^2",
+      "LT_x LT_y",
+      "LT_x LT_z",
+      "LT_y^2",
+      "LT_y LT_z",
+      "LT_z^2"
+    ],
+    "S2+J": [
+      "LT_x",
+      "LT_y",
+      "LT_z",
+      "LT_x^2",
+      "LT_x LT_y",
+      "LT_x LT_z",
+      "LT_y^2",
+      "LT_y LT_z",
+      "LT_z^2",
+      "Theta_1",
+      "Theta_2",
+      "Theta_3",
+      "Theta_4",
+      "Theta_5",
+      "Theta_6"
+    ]
+  }
+}

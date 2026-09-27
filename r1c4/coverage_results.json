@@ -1,0 +1,14 @@
+{
+  "n": 100,
+  "u_res_mm": 1.8487696906836562,
+  "U_res_k2_mm": 3.6975393813673123,
+  "covered_original_errors": 90,
+  "empirical_coverage": 0.9,
+  "centred_rms_mm": 1.8395026163337294,
+  "norm_SD_mm": 1.1471768839297365,
+  "E95_mm": 3.9864910696341105,
+  "smallest_exceedance_mm": 3.721681960613138,
+  "largest_covered_mm": 3.503790499797951,
+  "coverage_definition": "mean(norm(e_i)<=2*sqrt(trace(sample_cov(e)))); original uncentred residual vectors, full precision",
+  "file_md5": "e3b86e528c8497922cd332c6c05fb316"
+}

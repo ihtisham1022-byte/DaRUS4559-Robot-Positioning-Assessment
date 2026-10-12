@@ -1,6 +1,6 @@
 # DaRUS-4559 post-calibration assessment: reproducibility package
 
-This package reproduces the numerical assessment in the revised Measurement manuscript, including Reviewer 1 Comments 2-4. It is a reproducibility implementation assembled from the verified analyses, not the upstream authors' calibration algorithm. No robot calibration or physical compensation is performed.
+This package reproduces the numerical analyses presented in the associated Measurement manuscript. It is a reproducibility implementation assembled from the verified analyses, not the upstream authors' calibration algorithm. No robot calibration or physical compensation is performed.
 
 ## Run (Windows CMD)
 Install Python 3.12, extract this folder, and open CMD in it:
@@ -31,7 +31,7 @@ The regenerated figures reproduce the quantitative content; graphical styling ne
 All 45 calibration and 100 validation poses are retained. Residuals and Cartesian positions are read directly from the released columns. Residuals are converted metres to millimetres; position controls and distances remain in metres. Euclidean error is norm(E_x,E_y,E_z). No imputation or pose exclusion. Six physical joints Theta_1..Theta_6 are used in recorded radians; auxiliary Theta_3_1 is excluded.
 Sample covariance/SD use N-1. Percentiles use NumPy linear interpolation (Hyndman-Fan type 7). Bias removal is diagnostic subtraction of the same sample mean, not externally tested compensation. u_res is sqrt(trace(sample covariance)); U_res,k2=2*u_res. Empirical coverage compares original, uncentred error norms with the full-precision threshold; 90/100 covered.
 Mean intervals use Student t with N-1 degrees of freedom. Correlation intervals use Fisher transformation, normal 1.96 quantile and SE=1/sqrt(N-3); the Spearman interval is an approximate analytical sensitivity descriptor. None accounts for arbitrary pose dependence.
-The full-precision Table 9 intervals differ slightly from earlier manuscript calculations based on rounded moments. Use outputs/analytical_intervals.csv and the supplied correction instructions. This changes only displayed endpoint digits, not the interpretation.
+The confidence intervals reported in Table 9 are calculated using full-precision numerical estimates. The corresponding results are available in outputs/analytical_intervals.csv.
 
 ## Spatial and joint settings
 Calibration-box membership tests all three Cartesian coordinates, inclusive boundaries. Nearest-calibration distance is minimum Euclidean distance to 45 calibration positions. Its tertiles use unrounded linear-interpolated 1/3 and 2/3 quantiles, assigning equality to the lower group.
@@ -46,4 +46,4 @@ run_all.py verifies checksums and baseline estimates, covariance/bias-scatter id
 Both time-series files have only three coordinate columns and no timestamp column. Their first and third coordinates are exactly equal. Horizontal rows=57,313; vertical rows=100,737. The vertical sequence has four duplicate rows, retained for integrity assessment. The scripts do not estimate velocity, dynamic path error or controlled repeatability.
 
 ## Release status
-The reproducibility package is publicly available on GitHub and has been successfully executed using the dependency versions specified in requirements.txt. The GitHub repository provides access to the reproducibility scripts, input datasets, numerical results, and supporting documentation. The repository URL is provided in the associated manuscript to facilitate independent verification and reproducibility. Confirm the desired licence for the new analysis code when depositing; the source data retain their upstream CC BY 4.0 licence.
+The reproducibility package is publicly available on GitHub and has been successfully executed using the dependency versions specified in requirements.txt. The GitHub repository provides access to the reproducibility scripts, input datasets, numerical results, and supporting documentation. The repository URL is provided in the associated manuscript to facilitate independent verification and reproducibility.The original dataset retains its CC BY 4.0 licence. Licensing information for the analysis code is provided separately, where applicable.
